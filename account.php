@@ -55,11 +55,6 @@ error_reporting(0);
                         <h2 class="pb-30">Account & Settings</h2><!-- Template Name -->
                         <div class="">
                             <div class="single-footer-widgetx">
-
-                            
-
-                  
-
                                     <input type="submit" value="UPDATE" class="click-btn btn btn-default" name="ok">
                             </div>
                         </div>
