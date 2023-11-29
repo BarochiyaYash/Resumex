@@ -25,11 +25,9 @@
                             <ul>
                                 <!-- <li><a href="generic.php">Generic</a></li> -->
                                 <li><a href="Contact.php">Contact Us</a></li>
-                                <li><a href="developers.php">ABOUT DEVELOPERS<sup>+</sup></a></li>
+                                <li><a href="account.php">Account</a></li>
                             </ul>
-                            
                         </li>
-    
                         <li class="menu-active"><a href="logout.php">LOGOUT</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
