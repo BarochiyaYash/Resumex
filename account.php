@@ -193,23 +193,12 @@ error_reporting(0);
 
 
                                         <input type="submit" value="UPDATE" class="click-btn btn btn-default" name="ok">
-
-
-
-
                                     </form>
-                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-
-
-
-
-
         </div>
         </div>
     </section>
