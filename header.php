@@ -29,6 +29,7 @@
                             </ul>
                             
                         </li>
+    
                         <li class="menu-active"><a href="logout.php">LOGOUT</a></li>
                     </ul>
                 </nav><!-- #nav-menu-container -->
