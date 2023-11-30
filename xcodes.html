@@ -1,0 +1,39 @@
+INDEX PAGE
+
+<section class="course-area section-gap" id="course">
+    <div class="container">
+        <div class="row d-flex justify-content-center">
+            <div class="menu-content pb-60 col-lg-9">
+                <div class="title text-center">
+                    <h1 class="mb-10">Letest Template</h1>
+                    <p>Make a Profacenael.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="active-course-caruselxx">
+        <?php
+            $con = mysqli_connect("localhost", "root", "", "resume");
+            $query = "select * from template_index";
+            $res = mysqli_query($con, $query);
+            while ($row = mysqli_fetch_array($res)) {
+            ?>
+            <a href="edittemplate.php?id=<?php echo $row['id'] ?>">
+                    <div class="single-course item">
+                        <img class="img-fluid" src="admin/<?php echo $row['logic_file'] ?>" alt="">
+                        <div class="details">
+                            <center>
+                                <h4><?php echo $row['temp_name'] ?></h4>
+                            </center>
+                        </div>
+                    </div>
+                </a>	
+            <?php
+            }
+            ?>
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -123,50 +123,121 @@ error_reporting(0);
 			</div>
 		</div>
 	</section>
-
-
-
-
-
-	<section class="course-area section-gap" id="course">
-		<div class="container">
-			<div class="row d-flex justify-content-center">
-				<div class="menu-content pb-60 col-lg-9">
-					<div class="title text-center">
-						<h1 class="mb-10">Letest Template</h1>
-						<p>Make a Profacenael.</p>
-					</div>
-				</div>
-			</div>
-			
-			<div class="row">
-				<div class="active-course-caruselxx">
-			<?php
-				$con = mysqli_connect("localhost", "root", "", "resume");
-				$query = "select * from template_index";
-				$res = mysqli_query($con, $query);
-				while ($row = mysqli_fetch_array($res)) {
-				?>
-				<a href="edittemplate.php?id=<?php echo $row['id'] ?>">
-						<div class="single-course item">
-							<img class="img-fluid" src="admin/<?php echo $row['logic_file'] ?>" alt="">
-							<div class="details">
-								<center>
-									<h4><?php echo $row['temp_name'] ?></h4>
-								</center>
+<!-- Start fact Area -->
+<section class="fact-area relative section-gap" id="fact">
+				<div class="overlay overlay-bg"></div>
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-40 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Some Features that Made us Unique</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
 							</div>
 						</div>
-					</a>	
-				<?php
-				}
-				?>
-				</div>
-			</div>
-		</div>
-	</section>
+					</div>						
+				</div>	
+			</section>
+			<!-- End fact Area -->
+			<!-- Start counter Area -->
+			<section class="counter-area">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-3 col-md-6">
+							<div class="single-counter">
+								<h1 class="counter">2536</h1>
+								<p>Happy Clients</p>								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-counter">
+								<h1 class="counter">6784</h1>
+								<p>Total Projects</p>								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-counter">
+								<h1 class="counter">1059</h1>
+								<p>Cups Coffee</p>								
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6">
+							<div class="single-counter">
+								<h1 class="counter">12239</h1>
+								<p>Tickets Submitted</p>								
+							</div>
+						</div>												
+					</div>
+				</div>	
+			</section>
+			<!-- end counter Area -->
 
 
 
+
+
+
+
+<!-- Start price Area -->
+<section class="price-area section-gap" id="price">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">Purchase whatever you want</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="col-lg-4">
+							<div class="single-price no-padding">
+								<div class="price-top">
+									<h4>PDF</h4>
+								</div>
+								<p>
+									Who are in extremely love with <br>
+									eco friendly system.
+								</p>
+								<div class="price-bottom">
+									<h1><span>$</span> 79.99</h1>
+									<a href="#" class="primary-btn header-btn">Purchase Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-price no-padding">
+								<div class="price-top">
+									<h4>E-Book</h4>
+								</div>
+								<p>
+									Who are in extremely love with <br>
+									eco friendly system.
+								</p>
+								<div class="price-bottom">
+									<h1><span>$</span> 99.99</h1>
+									<a href="#" class="primary-btn header-btn">Purchase Now</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="single-price no-padding">
+								<div class="price-top">
+									<h4>Print Copy</h4>
+								</div>
+								<p>
+									Who are in extremely love with <br>
+									eco friendly system.
+								</p>
+								<div class="price-bottom">
+									<h1><span>$</span> 59.99</h1>
+									<a href="#" class="primary-btn">Purchase Now</a>
+								</div>
+							</div>				
+						</div>								
+					</div>
+				</div>	
+			</section>
+			<!-- End price Area -->
 
 	<!-- Start fact Area -->
 	<section class="fact-area relative section-gap" id="fact">
