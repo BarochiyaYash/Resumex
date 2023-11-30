@@ -1196,7 +1196,6 @@ h1, h2, h3, h4, h5, h6 {
   width: 14px;
   height: 14px;
   border: 3px solid #f53f51;
-  background: #fff;
   top: 4px;
   left: 0;
   border-radius: 50%;
@@ -2191,25 +2190,25 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-.p1-gradient-bg, .primary-btn, .banner-area, .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
+.p1-gradient-bg, .primary-btn, .banner-area, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
 }
 
-.p1-gradient-bg, .primary-btn, .banner-area1, .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
+.p1-gradient-bg, .primary-btn, .banner-area1, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(90deg, rgb(255, 121, 143) 0%, rgb(255, 121, 143) 100%);
   background-image: -webkit-linear-gradient(90deg, rgb(255, 121, 143) 0%, rgb(255, 121, 143) 100%);
   background-image: -ms-linear-gradient(90deg, rgb(255, 121, 143) 0%, rgb(255, 121, 143) 100%);
 }
 
-.p1-gradient-bg, .primary-btn, .banner-area2, .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
+.p1-gradient-bg, .primary-btn, .banner-area2, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
 }
 
-.p1-gradient-bg, .primary-btn, .banner-area, .single-price:hover .price-bottom, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
+.p1-gradient-bg, .primary-btn, .banner-area, .call-to-action-area, .single-footer-widget .click-btn, .generic-banner {
   background-image: -moz-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -webkit-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
   background-image: -ms-linear-gradient(90deg, #f45622 0%, #f53e54 100%);
@@ -2510,6 +2509,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 .single-price {
   text-align: center;
   border: 1px solid #eeeeee;
+  background-color: #f9f9ff;
 }
 
 .single-price .price-top {
@@ -2576,9 +2576,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   cursor: pointer;
 }
 
-.single-price:hover .price-bottom h1 {
-  color: #fff;
-}
+
 
 .single-price:hover .primary-btn {
   background-color: #ca4829;
