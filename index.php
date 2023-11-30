@@ -1,12 +1,4 @@
-<?php
-session_start();
-if ($_SESSION['u_name'] == null) {
-	header('location:login.php');
-}
-if ($_SESSION['u_name']) {
 
-	error_reporting(0);
-	?>
 	<!DOCTYPE html>
 	<html lang="zxx" class="no-js">
 
@@ -255,7 +247,7 @@ if ($_SESSION['u_name']) {
 							</div>
 
 							<div class="price-bottom">
-								<h1><span>$</span>19.49</h1>
+								<h1><span>$</span>9.99/USD</h1>
 								<a href="#" class="primary-btn header-btn">Purchase Now</a>
 							</div>
 						</div>
@@ -269,111 +261,120 @@ if ($_SESSION['u_name']) {
 		<!-- End price Area -->
 
 		<section class="testomial-area section-gap">
-				<div class="container">
-					<div class="row d-flex justify-content-center">
-						<div class="menu-content pb-60 col-lg-8">
-							<div class="title text-center">
-								<h1 class="mb-10">What our Reader’s Say about us</h1>
-								<p>Who are in extremely love with eco friendly system.</p>
-							</div>
-						</div>
-					</div>						
-					<div class="row">
-						<div class="active-tstimonial-carusel">
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t1.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t2.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t3.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>	
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t1.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t2.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t3.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>															
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t1.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t2.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>
-							<div class="single-testimonial item">
-								<img class="mx-auto" src="img/t3.png" alt="">
-								<p class="desc">
-									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
-								</p>
-								<h4>Mark Alviro Wiens</h4>
-								<p>
-									CEO at Google
-								</p>
-							</div>														
+			<div class="container">
+				<div class="row d-flex justify-content-center">
+					<div class="menu-content pb-60 col-lg-8">
+						<div class="title text-center">
+							<h1 class="mb-10">What our Reader’s Say about us</h1>
+							<p>Who are in extremely love with eco friendly system.</p>
 						</div>
 					</div>
-				</div>	
-			</section>
+				</div>
+				<div class="row">
+					<div class="active-tstimonial-carusel">
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t1.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t2.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t3.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t1.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t2.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t3.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t1.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t2.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+						<div class="single-testimonial item">
+							<img class="mx-auto" src="img/t3.png" alt="">
+							<p class="desc">
+								Accessories Here you can find the best computer accessory for your laptop, monitor, printer,
+								scanner, speaker, projector, hardware and more. laptop accessory
+							</p>
+							<h4>Mark Alviro Wiens</h4>
+							<p>
+								CEO at Google
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
 
 
@@ -402,6 +403,3 @@ if ($_SESSION['u_name']) {
 	</body>
 
 	</html>
-	<?php
-}
-?>
