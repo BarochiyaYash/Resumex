@@ -216,20 +216,10 @@ if ($_SESSION['u_name']) {
 									<h3 class="mb-20">Unordered List</h3>
 									<div class="">
 										<ul class="unordered-list">
-											<li>Fta Keys</li>
-											<li>For Women Only Your Computer Usage</li>
-											<li>Facts Why Inkjet Printing Is Very Appealing
-												<ul>
-													<li>Addiction When Gambling Becomes
-														<ul>
-															<li>Protective Preventative Maintenance</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li>Dealing With Technical Support 10 Useful Tips</li>
-											<li>Make Myspace Your Best Designed Space</li>
-											<li>Cleaning And Organizing Your Computer</li>
+											<li>Access all Free Templates </li>
+											<li>Save 2 Template In Account</li>
+											<br>
+											<br>
 										</ul>
 									</div>
 								</div>
@@ -247,7 +237,7 @@ if ($_SESSION['u_name']) {
 					<div class="col-lg-6">
 						<div class="single-price no-padding">
 							<div class="price-top">
-								<h4>Free Plans</h4>
+								<h4>Resumex Pro<sup>+</sup></h4>
 							</div>
 
 							<div class="price-bottom">
@@ -255,27 +245,17 @@ if ($_SESSION['u_name']) {
 									<h3 class="mb-20">Unordered List</h3>
 									<div class="">
 										<ul class="unordered-list">
-											<li>Fta Keys</li>
-											<li>For Women Only Your Computer Usage</li>
-											<li>Facts Why Inkjet Printing Is Very Appealing
-												<ul>
-													<li>Addiction When Gambling Becomes
-														<ul>
-															<li>Protective Preventative Maintenance</li>
-														</ul>
-													</li>
-												</ul>
-											</li>
-											<li>Dealing With Technical Support 10 Useful Tips</li>
-											<li>Make Myspace Your Best Designed Space</li>
-											<li>Cleaning And Organizing Your Computer</li>
+											<li>Access All Premium Templates</li>
+											<li>Save Unlimited Template In your Account</li>
+											<li>Share Template Via Link</li>
+											<li>Color Modification Options</li>
 										</ul>
 									</div>
 								</div>
 							</div>
 
 							<div class="price-bottom">
-								<h1><span>$</span>Free</h1>
+								<h1><span>$</span>19.49</h1>
 								<a href="#" class="primary-btn header-btn">Purchase Now</a>
 							</div>
 						</div>
@@ -286,68 +266,114 @@ if ($_SESSION['u_name']) {
 		</section>
 		<!-- End price Area -->
 		<!-- Start price Area -->
-		<section class="price-area section-gap" id="price">
-			<div class="container">
-				<div class="row d-flex justify-content-center">
-					<div class="menu-content pb-60 col-lg-8">
-						<div class="title text-center">
-							<h1 class="mb-10">Purchase whatever you want</h1>
-							<p>Who are in extremely love with eco friendly system.</p>
-						</div>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-4">
-						<div class="single-price no-padding">
-							<div class="price-top">
-								<h4>PDF</h4>
-							</div>
-							<p>
-								Who are in extremely love with <br>
-								eco friendly system.
-							</p>
-							<div class="price-bottom">
-								<h1><span>$</span> 79.99</h1>
-								<a href="#" class="primary-btn header-btn">Purchase Now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-price no-padding">
-							<div class="price-top">
-								<h4>E-Book</h4>
-							</div>
-							<p>
-								Who are in extremely love with <br>
-								eco friendly system.
-							</p>
-							<div class="price-bottom">
-								<h1><span>$</span> 99.99</h1>
-								<a href="#" class="primary-btn header-btn">Purchase Now</a>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4">
-						<div class="single-price no-padding">
-							<div class="price-top">
-								<h4>Print Copy</h4>
-							</div>
-							<p>
-								Who are in extremely love with <br>
-								eco friendly system.
-							</p>
-							<div class="price-bottom">
-								<h1><span>$</span> 59.99</h1>
-								<a href="#" class="primary-btn">Purchase Now</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
 		<!-- End price Area -->
 
-
+		<section class="testomial-area section-gap">
+				<div class="container">
+					<div class="row d-flex justify-content-center">
+						<div class="menu-content pb-60 col-lg-8">
+							<div class="title text-center">
+								<h1 class="mb-10">What our Reader’s Say about us</h1>
+								<p>Who are in extremely love with eco friendly system.</p>
+							</div>
+						</div>
+					</div>						
+					<div class="row">
+						<div class="active-tstimonial-carusel">
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t1.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t2.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t3.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>	
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t1.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t2.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t3.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>															
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t1.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t2.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>
+							<div class="single-testimonial item">
+								<img class="mx-auto" src="img/t3.png" alt="">
+								<p class="desc">
+									Accessories Here you can find the best computer accessory for your laptop, monitor, printer, scanner, speaker, projector, hardware and more. laptop accessory
+								</p>
+								<h4>Mark Alviro Wiens</h4>
+								<p>
+									CEO at Google
+								</p>
+							</div>														
+						</div>
+					</div>
+				</div>	
+			</section>
 
 
 
