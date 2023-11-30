@@ -192,57 +192,7 @@ if ($_SESSION['u_name']) {
 		</section>
 		<!-- End fact Area -->
 
-		<div class="whole-wrap">
-			<div class="container">
-				<div class="section-top-border">
-					<div class="row">
 
-						<div class="col-md-6 mt-sm-30">
-							<h3 class="mb-20">Unordered List</h3>
-							<div class="">
-								<ul class="unordered-list">
-									<li>Fta Keys</li>
-									<li>For Women Only Your Computer Usage</li>
-									<li>Facts Why Inkjet Printing Is Very Appealing
-										<ul>
-											<li>Addiction When Gambling Becomes
-												<ul>
-													<li>Protective Preventative Maintenance</li>
-												</ul>
-											</li>
-										</ul>
-									</li>
-									<li>Dealing With Technical Support 10 Useful Tips</li>
-									<li>Make Myspace Your Best Designed Space</li>
-									<li>Cleaning And Organizing Your Computer</li>
-								</ul>
-							</div>
-						</div>
-						<div class="col-md-6 mt-sm-30">
-							<h3 class="mb-20">Ordered List</h3>
-							<div class="">
-								<ol class="ordered-list">
-									<li><span>Fta Keys</span></li>
-									<li><span>For Women Only Your Computer Usage</span></li>
-									<li><span>Facts Why Inkjet Printing Is Very Appealing</span>
-										<ol class="ordered-list-alpha">
-											<li><span>Addiction When Gambling Becomes</span>
-												<ol class="ordered-list-roman">
-													<li><span>Protective Preventative Maintenance</span></li>
-												</ol>
-											</li>
-										</ol>
-									</li>
-									<li><span>Dealing With Technical Support 10 Useful Tips</span></li>
-									<li><span>Make Myspace Your Best Designed Space</span></li>
-									<li><span>Cleaning And Organizing Your Computer</span></li>
-								</ol>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- Start price Area -->
 		<section class="price-area section-gap" id="price">
 			<div class="container">
@@ -262,27 +212,27 @@ if ($_SESSION['u_name']) {
 							</div>
 
 							<div class="price-bottom">
-							<div class="col-md-12 mt-sm-30">
-								<h3 class="mb-20">Unordered List</h3>
-								<div class="">
-									<ul class="unordered-list">
-										<li>Fta Keys</li>
-										<li>For Women Only Your Computer Usage</li>
-										<li>Facts Why Inkjet Printing Is Very Appealing
-											<ul>
-												<li>Addiction When Gambling Becomes
-													<ul>
-														<li>Protective Preventative Maintenance</li>
-													</ul>
-												</li>
-											</ul>
-										</li>
-										<li>Dealing With Technical Support 10 Useful Tips</li>
-										<li>Make Myspace Your Best Designed Space</li>
-										<li>Cleaning And Organizing Your Computer</li>
-									</ul>
+								<div class="col-md-12 mt-sm-30">
+									<h3 class="mb-20">Unordered List</h3>
+									<div class="">
+										<ul class="unordered-list">
+											<li>Fta Keys</li>
+											<li>For Women Only Your Computer Usage</li>
+											<li>Facts Why Inkjet Printing Is Very Appealing
+												<ul>
+													<li>Addiction When Gambling Becomes
+														<ul>
+															<li>Protective Preventative Maintenance</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>Dealing With Technical Support 10 Useful Tips</li>
+											<li>Make Myspace Your Best Designed Space</li>
+											<li>Cleaning And Organizing Your Computer</li>
+										</ul>
+									</div>
 								</div>
-							</div>
 							</div>
 
 							<div class="price-bottom">
@@ -297,18 +247,40 @@ if ($_SESSION['u_name']) {
 					<div class="col-lg-6">
 						<div class="single-price no-padding">
 							<div class="price-top">
-								<h4>Print Copy</h4>
+								<h4>Free Plans</h4>
 							</div>
-							<p>
-								Who are in extremely love with <br>
-								eco friendly system.
-							</p>
+
 							<div class="price-bottom">
-								<h1><span>$</span> 59.99</h1>
-								<a href="#" class="primary-btn">Purchase Now</a>
+								<div class="col-md-12 mt-sm-30">
+									<h3 class="mb-20">Unordered List</h3>
+									<div class="">
+										<ul class="unordered-list">
+											<li>Fta Keys</li>
+											<li>For Women Only Your Computer Usage</li>
+											<li>Facts Why Inkjet Printing Is Very Appealing
+												<ul>
+													<li>Addiction When Gambling Becomes
+														<ul>
+															<li>Protective Preventative Maintenance</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>Dealing With Technical Support 10 Useful Tips</li>
+											<li>Make Myspace Your Best Designed Space</li>
+											<li>Cleaning And Organizing Your Computer</li>
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="price-bottom">
+								<h1><span>$</span>Free</h1>
+								<a href="#" class="primary-btn header-btn">Purchase Now</a>
 							</div>
 						</div>
 					</div>
+
 				</div>
 			</div>
 		</section>
