@@ -46,7 +46,7 @@ if ($_SESSION['u_name']) {
 
         <section class="price-area section-gap" id="price">
             <div class="container">
-                
+
                 <?php
                 include('pro_nav.php');
                 ?>
@@ -54,26 +54,41 @@ if ($_SESSION['u_name']) {
                 <div class="col-lg-12">
                     <div class="single-price no-padding">
                         <div class="price-top">
-                            <h4>Resumex Pro<sup>+</sup></h4>
+                            <h4>Resume Data</h4>
                         </div>
 
 
 
                         <div class="price-bottom">
-                            <div class="col-md-12 mt-sm-30">
+                            <div class="col-md-12 mt-sm-30" style=" text-align: left;">
                                 <section id="about">
                                     <div class="container">
                                         <div class="single-info row mt-40 align-items-center">
                                             <div class="col-lg-12 col-md-12 no-padding info-rigth">
+                                                <div class="info-content">
+                                                    <!-- Template Name -->
+                                                    <div class="">
+                                                        <div class="single-footer-widgetx">
 
 
-                                                <div class="price-bottom">
-                                                    <div class="col-md-12 mt-sm-30">
-                                                        <h3 class="mb-20">Youhave a Activeter Resume Pro+</h3>
+                                                            <form action="upload.php" method="POST"
+                                                                enctype="multipart/form-data">
+                                                                <br>
+
+                                                                <br>
+                                                                <div class="row">
+                                                                    
+                                                                    <div class="col-lg-12">
+                                                                    <input type="submit" value="Let's Resume Profile"
+                                                                            class="click-btn btn btn-default" name="ok">
+                                                                    </div>
+                                                                </div>
+                                                            </form>
+
+
+                                                        </div>
                                                     </div>
                                                 </div>
-
-
                                             </div>
                                         </div>
                                     </div>

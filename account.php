@@ -46,15 +46,7 @@ if ($_SESSION['u_name']) {
 
         <section class="price-area section-gap" id="price">
             <div class="container">
-                <div class="row d-flex justify-content-center">
-                    <div class="menu-content pb-60 col-lg-8">
-                        <div class="title text-center">
-                            <br>
-                            <br>
-                            <h1 class="mb-10">Resumex Settings</h1>
-                        </div>
-                    </div>
-                </div>
+                
                 <?php
                 include('pro_nav.php');
                 ?>
@@ -107,6 +99,10 @@ if ($_SESSION['u_name']) {
 
 
 
+                                                                <br>
+                                                                <input type="submit" value="Change Password" href="Change_Password.php"
+                                                                    class="click-btn btn btn-default"/>
+                                                                <br>
                                                                 <br>
                                                                 <input type="submit" value="Edit" href="account_edit.php"
                                                                     class="click-btn btn btn-default" name="ok">
