@@ -62,7 +62,7 @@ if ($_SESSION['u_name']) {
                 <div class="col-lg-12">
                     <div class="single-price no-padding">
                         <div class="price-top">
-                            <h4>Profile</h4>
+                            <h4>Resumex Pro<sup>+</sup></h4>
                         </div>
 
 
@@ -79,36 +79,36 @@ if ($_SESSION['u_name']) {
                                                         <div class="single-footer-widgetx">
 
 
-                                                            <form action="account_edit.php" method="POST"
+                                                            <form action="upload.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <br>
 
                                                                 <br>
                                                                 <label class="formlable">First Name</label>
                                                                 <input type="text" class="form-control disable"
-                                                                    name="full_name" readonly>
+                                                                    name="full_name" required>
                                                                 <br>
                                                                 <label class="formlable">Last Name</label>
                                                                 <input type="text" class="form-control" name="full_name"
-                                                                    readonly>
+                                                                    required>
                                                                 <br>
                                                                 <label class="formlable">Gender</label>
                                                                 <input type="text" class="form-control" name="full_name"
-                                                                    readonly>
+                                                                    required>
                                                                 <br>
                                                                 <label class="formlable">Mobile Number</label>
                                                                 <input type="text" class="form-control" name="full_name"
-                                                                    readonly>
+                                                                    required>
                                                                 <br>
                                                                 <label class="formlable">Email</label>
                                                                 <input type="text" class="form-control" name="full_name"
-                                                                    readonly>
+                                                                    required>
                                                                 <br>
 
 
 
                                                                 <br>
-                                                                <input type="submit" value="Edit" href="account_edit.php"
+                                                                <input type="submit" value="Update"
                                                                     class="click-btn btn btn-default" name="ok">
                                                             </form>
 
