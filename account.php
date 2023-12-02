@@ -46,7 +46,7 @@ if ($_SESSION['u_name']) {
 
         <section class="price-area section-gap" id="price">
             <div class="container">
-                
+
                 <?php
                 include('pro_nav.php');
                 ?>
@@ -71,7 +71,7 @@ if ($_SESSION['u_name']) {
                                                         <div class="single-footer-widgetx">
 
 
-                                                            <form action="account_edit.php" method="POST"
+                                                            <form action="Change_password.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <br>
 
@@ -100,12 +100,22 @@ if ($_SESSION['u_name']) {
 
 
                                                                 <br>
-                                                                <input type="submit" value="Change Password" href="Change_Password.php"
-                                                                    class="click-btn btn btn-default"/>
+
+                                                                <input type="submit" value="Change Password"
+                                                                    class="click-btn btn btn-default" />
+
+
+
                                                                 <br>
                                                                 <br>
-                                                                <input type="submit" value="Edit" href="account_edit.php"
-                                                                    class="click-btn btn btn-default" name="ok">
+                                                            </form>
+
+                                                            <form action="account_edit.php" method="POST"
+                                                                enctype="multipart/form-data">
+                                                                <input type="submit" value="Editlogin"
+                                                                    class="click-btn btn btn-default" />
+
+
                                                             </form>
 
 
