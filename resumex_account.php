@@ -95,14 +95,14 @@ if ($_SESSION['u_name']) {
                                                             <br>
 
 
-                                                            <form action="Reset_Data.php" method="POST"
+                                                            <form action="reset_data.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Reset All Data"
                                                                     href="account_edit.php"
                                                                     class="click-btn btn btn-default">
                                                             </form>
                                                             <br>
-                                                            <form action="Delete_Account.php" method="POST"
+                                                            <form action="delete_account.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Delete Account"
                                                                     href="account_edit.php"

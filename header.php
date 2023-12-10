@@ -20,7 +20,7 @@
 
                     <li class="menu-has-children"><a style="color: white;">OTHER</a>
                         <ul>
-                            <li><a href="Contact.php">Contact Us</a></li>
+                            <li><a href="contact.php">Contact Us</a></li>
                         </ul>
                     </li>
                     <?php
