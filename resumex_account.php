@@ -87,7 +87,7 @@ if ($_SESSION['u_name']) {
                                                                 <br>
                                                             </form>
 
-                                                            <form action="change_password.php" method="POST"
+                                                            <form action="change_verify.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Change Password"
                                                                     class="click-btn btn btn-default" />
@@ -95,17 +95,17 @@ if ($_SESSION['u_name']) {
                                                             <br>
 
 
-                                                            <form action="reset_data.php" method="POST"
+                                                            <form action="change_verify_reset.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Reset All Data"
-                                                                    href="account_edit.php"
+                                                                    href="change_verify_reset.php"
                                                                     class="click-btn btn btn-default">
                                                             </form>
                                                             <br>
-                                                            <form action="delete_account.php" method="POST"
+                                                            <form action="delete_verify.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Delete Account"
-                                                                    href="account_edit.php"
+                                                                    href="delete_verify.php"
                                                                     class="click-btn btn btn-default" name="ok">
                                                             </form>
 

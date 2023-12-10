@@ -35,8 +35,9 @@
         <!-- //new -->
 
         <div class="card-body px-6 py-6">
-            <h3 class="card-title text-left mb-5">Chage Password</h3>
-
+            <h3 class="card-title text-left mb-5">Delete Account</h3>
+            <h6 class="card-title text-left mb-5">Need to verify your ID and Password</h6>
+            
 
             <!-- ##### Checkout Area Start ##### -->
             <div class="checkout_area section-padding-150">
@@ -46,7 +47,9 @@
                         <div class="col-12 col-md-12">
                             <div class="checkout_details_area mt-10 clearfix">
                                 <form method="POST">
-                                    <?php
+
+
+                                    <!-- <?php
                                     session_start();
                                     if (isset($_POST["ok"])) {
                                         $con = mysqli_connect("localhost", "root", "", "resume");
@@ -62,7 +65,9 @@
                                         }
                                     }
 
-                                    ?>
+                                    ?> -->
+
+
                                     <div class="row">
                                         <div class="col-md-12 mb-12">
                                             <label for="email_address">User Name<span>*</span></label>
@@ -77,19 +82,11 @@
                                         </div>
                                         <div class="col-12">
                                             <br>
-                                            <div class="custom-control custom-checkbox d-block mb-2">
-                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
-                                                <label class="custom-control-label" for="customCheck1">Terms and
-                                                    conitions<span>*</span></label>
-                                            </div>
-                                            <div class="custom-control custom-checkbox d-block mb-2">
-                                                <a href="signup.php"> Create an accout</a>
-                                            </div>
                                             <br>
                                             <center>
                                                 <div class="col-12  mb-12">
                                                     <input type="submit" class="btn essence-btn" id="customCheck2"
-                                                        value="Login" name="ok">
+                                                        value="Verify and Next" name="ok">
                                                     <!-- <a href="#" name="ok"></a> -->
                                                 </div>
                                             </center>
