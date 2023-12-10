@@ -11,7 +11,6 @@
                     <li class="menu-has-children"><a style="color: white;">Templates</a>
                         <ul>
                             <li><a href="template.php">All Templates</a></li>
-                            <!-- <li ><a href="mytemplate.php">My Template<sup>*</sup></a></li> -->
                             <li><a href="templateprofile.php">My Template Profile<sup>*</sup></a></li>
                         </ul>
                     </li>
@@ -21,9 +20,7 @@
 
                     <li class="menu-has-children"><a style="color: white;">OTHER</a>
                         <ul>
-                            <!-- <li><a href="generic.php">Generic</a></li> -->
                             <li><a href="Contact.php">Contact Us</a></li>
-                            <li><a href="account.php">Account</a></li>
                         </ul>
                     </li>
                     <?php
