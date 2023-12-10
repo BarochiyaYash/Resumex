@@ -5,9 +5,6 @@
 			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="single-footer-widget">
 					<h6>About Us</h6>
-					<p>
-						This website specially designed for the make resume FASTER and PROFESSIONAL.
-					</p>
 					<p class="footer-text">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;

@@ -57,23 +57,23 @@ error_reporting(0);
             <div class="row d-flex justify-content-center">
                 <div class="menu-content pb-60 col-lg-9">
                     <div class="title text-center">
-                        <h1 class="mb-10">Contact Us</h1>
-                        <p>contact for any technical problem</p>
+                        <h1 class="mb-10">Resumex.io Support</h1>
+                        <p>Support for any technical problem</p>
                     </div>
                 </div>
             </div>
             <div class="single-info row mt-40 align-items-center">
 
-                <div class="col-lg-6 col-md-12 text-center no-padding info-left">
+                <div class="col-lg-12 col-md-12 text-center no-padding info-left">
                     <div class="info-thumb">
                         
                     </div>
                 </div>
-                <div class="col-lg-6 col-md-12 no-padding info-rigth">
+                <div class="col-lg-12 col-md-12 no-padding info-rigth">
                     <div class="info-content">
                         <h2 class="pb-30">Email Support</h2>
                         <p>
-                        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=support.mail@resumester.com" target="_blank"><h4>support.mail@resumester.com</h4></a>
+                        <a href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;tf=1&amp;to=support.mail@resumester.com" target="_blank"><h4>support.mail@resumex   .com</h4></a>
                         </p>
                         <br>
                     </div>
@@ -85,18 +85,6 @@ error_reporting(0);
 
         <div class="container">
             <div class="single-info row mt-40 align-items-center">
-
-                
-
-                <div class="col-lg-6 col-md-12 no-padding info-rigth">
-                    <div class="info-content">
-                        <h2 class="pb-30">Address</h2>
-                        <p>
-                        <a href="https://goo.gl/maps/dgGVw7zA7qAaWGRj7" target="_bleck"><h4>Bhavnagar Highway, Kasturbadham, Rajkot, Gujarat 360020</h4></a>
-                        </p>
-                        <br>
-
-                    </div>
                 </div>
             </div>
         </div>

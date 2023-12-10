@@ -101,15 +101,11 @@
 						</div>
 						<div class="col-lg-6 col-md-12 no-padding info-rigth">
 							<div class="info-content">
-								<h2 class="pb-30">What is a Resume? Definition and Purpose</h2>
+								<h2 >The Purpose of Resume.</h2>
 								<p>
-									A strong resume communicates your qualifications and sets you up for career success.
-									Here’s a full breakdown of what a resume is (with a concise definition), why resumes are
-									important for job seekers, and what makes each type of resume unique.
+								Your professional snapshot. Land interviews, showcase skills, fit company culture. Foot in the door, track career path. Useful for various opportunities. Craft well, get the job.
 								</p>
 								<br>
-
-								<img src="img/signature.png" alt="">
 							</div>
 						</div>
 					</div>
@@ -124,7 +120,6 @@
 					<div class="menu-content pb-40 col-lg-8">
 						<div class="title text-center">
 							<h1 class="mb-10">Some Features that Made us Unique</h1>
-							<p>Who are in extremely love with eco friendly system.</p>
 						</div>
 					</div>
 				</div>
@@ -136,28 +131,22 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-3 col-md-6">
+						
+					</div>
+					<div class="col-lg-3 col-md-6">
 						<div class="single-counter">
-							<h1 class="counter">2536</h1>
-							<p>Happy Clients</p>
+							<h1 class="counter">2784</h1>
+							<p>Happy Users</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
 						<div class="single-counter">
-							<h1 class="counter">6784</h1>
-							<p>Total Projects</p>
+							<h1 class="counter">9059</h1>
+							<p>Resume Make</p>
 						</div>
 					</div>
 					<div class="col-lg-3 col-md-6">
-						<div class="single-counter">
-							<h1 class="counter">1059</h1>
-							<p>Cups Coffee</p>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6">
-						<div class="single-counter">
-							<h1 class="counter">12239</h1>
-							<p>Tickets Submitted</p>
-						</div>
+						
 					</div>
 				</div>
 			</div>
@@ -174,7 +163,7 @@
 				<div class="row d-flex justify-content-center">
 					<div class="menu-content pb-20 col-lg-8">
 						<div class="title text-center">
-							<h1 class="mb-10">Let's made your Resume</h1>
+							<h1 class="mb-10">Let's Make your Resume</h1>
 							<br>
 							<a href="template.php" class="primary-btn text-uppercase">Free Template</a>
 						</div>
@@ -191,8 +180,8 @@
 				<div class="row d-flex justify-content-center">
 					<div class="menu-content pb-60 col-lg-8">
 						<div class="title text-center">
-							<h1 class="mb-10">Purchase whatever you want</h1>
-							<p>Who are in extremely love with eco friendly system.</p>
+							<h1 class="mb-10">Plans</h1>
+							<p>The professional Experience with Resumex Pro<sup>+</sup></p>
 						</div>
 					</div>
 				</div>
