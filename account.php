@@ -66,42 +66,30 @@ if ($_SESSION['u_name']) {
                                                     <!-- Template Name -->
                                                     <div class="">
                                                         <div class="single-footer-widgetx">
-
                                                             <?php
                                                             $con = mysqli_connect("localhost", "root", "", "resume");
-                                                            $query = "select * from resume_data where user_id='" . $_SESSION['u_name'] . "'";
+                                                            $query = "select * from register where user_id='" . $_SESSION['u_name'] . "'";
                                                             $res = mysqli_query($con, $query);
                                                             while ($row = mysqli_fetch_array($res)) {
                                                                 ?>
-                                                                <form action="change_verify.php" method="POST"
-                                                                    enctype="multipart/form-data">
+                                                                <form action="change_verify.php" method="POST" enctype="multipart/form-data">
                                                                     <br>
-
                                                                     <br>
                                                                     <label class="formlable">First Name</label>
-                                                                    <input type="text" class="form-control disable"
-                                                                        name="full_name" readonly>
-                                                                    <br>
-                                                                    <label class="formlable">Last Name</label>
-                                                                    <input type="text" class="form-control" name="full_name"
-                                                                        readonly>
+                                                                    <input type="text" class="form-control" name="full_name" value="<?php echo $row['name'] ?>" readonly>
                                                                     <br>
                                                                     <label class="formlable">Gender</label>
-                                                                    <input type="text" class="form-control" name="full_name"
-                                                                        readonly>
+                                                                    <input type="text" class="form-control" name="gender" value="<?php echo $row['gender'] ?>" readonly>
                                                                     <br>
                                                                     <label class="formlable">Mobile Number</label>
-                                                                    <input type="text" class="form-control" name="full_name"
-                                                                        readonly>
+                                                                    <input type="text" class="form-control" name="mobile_number" value="<?php echo $row['mobile'] ?>" readonly>
                                                                     <br>
                                                                     <label class="formlable">Email</label>
-                                                                    <input type="text" class="form-control" name="full_name"
-                                                                        readonly>
+                                                                    <input type="text" class="form-control" name="email" value="<?php echo $row['email'] ?>" readonly>
                                                                     <br>
                                                                     <br>
                                                                     <br>
                                                                 </form>
-
                                                                 <form action="account_edit.php" method="POST"
                                                                     enctype="multipart/form-data">
                                                                     <input type="submit" value="Edit Profile"
