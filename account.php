@@ -96,23 +96,13 @@ if ($_SESSION['u_name']) {
                                                                 <input type="text" class="form-control" name="full_name"
                                                                     readonly>
                                                                 <br>
-
-
-
-                                                                <br>
-
-                                                                <input type="submit" value="Change Password"
-                                                                    class="click-btn btn btn-default" />
-
-
-
                                                                 <br>
                                                                 <br>
                                                             </form>
 
                                                             <form action="account_edit.php" method="POST"
                                                                 enctype="multipart/form-data">
-                                                                <input type="submit" value="Editlogin"
+                                                                <input type="submit" value="Edit Profile"
                                                                     class="click-btn btn btn-default" />
 
 

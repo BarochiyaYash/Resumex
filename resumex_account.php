@@ -46,7 +46,7 @@ if ($_SESSION['u_name']) {
 
         <section class="price-area section-gap" id="price">
             <div class="container">
-                
+
                 <?php
                 include('pro_nav.php');
                 ?>
@@ -85,13 +85,34 @@ if ($_SESSION['u_name']) {
                                                                     readonly>
                                                                 <br>
                                                                 <br>
-                                                                <input type="submit" value="Reset All Data" href="account_edit.php"
-                                                                    class="click-btn btn btn-default" name="ok">
-                                                                    <br>
-                                                                    <br>
-                                                                <input type="submit" value="Delete Account" href="account_edit.php"
+                                                            </form>
+
+                                                            <form action="Change_Password.php" method="POST"
+                                                                enctype="multipart/form-data">
+                                                                <input type="submit" value="Change Password"
+                                                                    class="click-btn btn btn-default" />
+                                                            </form>
+                                                            <br>
+
+
+                                                            <form action="Reset_Data.php" method="POST"
+                                                                enctype="multipart/form-data">
+                                                                <input type="submit" value="Reset All Data"
+                                                                    href="account_edit.php"
+                                                                    class="click-btn btn btn-default">
+                                                            </form>
+                                                            <br>
+                                                            <form action="Delete_Account.php" method="POST"
+                                                                enctype="multipart/form-data">
+                                                                <input type="submit" value="Delete Account"
+                                                                    href="account_edit.php"
                                                                     class="click-btn btn btn-default" name="ok">
                                                             </form>
+
+
+
+
+
 
 
                                                         </div>
