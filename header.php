@@ -20,7 +20,7 @@
 
                     <li class="menu-has-children"><a style="color: white;">OTHER</a>
                         <ul>
-                            <li><a href="support.php">Contact Us</a></li>
+                            <li><a href="support.php">Resumex.io Support</a></li>
                         </ul>
                     </li>
                     <?php

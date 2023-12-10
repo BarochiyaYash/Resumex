@@ -254,8 +254,8 @@
 				<div class="row d-flex justify-content-center">
 					<div class="menu-content pb-60 col-lg-8">
 						<div class="title text-center">
-							<h1 class="mb-10">What our Reader’s Say about us</h1>
-							<p>Who are in extremely love with eco friendly system.</p>
+							<h1 class="mb-10">What our Users Say about us</h1>
+							<p>Who are in extremely love Resumex system.</p>
 						</div>
 					</div>
 				</div>
