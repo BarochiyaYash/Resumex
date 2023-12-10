@@ -95,10 +95,10 @@ if ($_SESSION['u_name']) {
                                                             <br>
 
 
-                                                            <form action="change_verify_reset.php" method="POST"
+                                                            <form action="reset_verify.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Reset All Data"
-                                                                    href="change_verify_reset.php"
+                                                                    href="reset_verify.php"
                                                                     class="click-btn btn btn-default">
                                                             </form>
                                                             <br>
