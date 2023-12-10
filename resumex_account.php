@@ -87,7 +87,7 @@ if ($_SESSION['u_name']) {
                                                                 <br>
                                                             </form>
 
-                                                            <form action="Change_Password.php" method="POST"
+                                                            <form action="change_password.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Change Password"
                                                                     class="click-btn btn btn-default" />

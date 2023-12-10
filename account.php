@@ -71,7 +71,7 @@ if ($_SESSION['u_name']) {
                                                         <div class="single-footer-widgetx">
 
 
-                                                            <form action="Change_password.php" method="POST"
+                                                            <form action="change_password.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <br>
 
