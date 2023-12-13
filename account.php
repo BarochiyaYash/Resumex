@@ -97,7 +97,6 @@ if ($_SESSION['u_name']) {
 
 
                                                                 </form>
-
                                                                 <?php
                                                             }
                                                             ?>
