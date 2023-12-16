@@ -46,7 +46,7 @@ if ($_SESSION['u_name']) {
 
         <section class="price-area section-gap" id="price">
             <div class="container">
-                
+
                 <?php
                 include('pro_nav.php');
                 ?>
@@ -69,42 +69,40 @@ if ($_SESSION['u_name']) {
                                                     <!-- Template Name -->
                                                     <div class="">
                                                         <div class="single-footer-widgetx">
+                                                            <?php
+                                                            $con = mysqli_connect("localhost", "root", "", "resume");
+                                                            $query = "select * from register where u_name='" . $_SESSION['u_name'] . "'";
+                                                            $res = mysqli_query($con, $query);
+                                                            while ($row = mysqli_fetch_array($res)) {
+                                                                ?>
 
-
-                                                            <form action="upload.php" method="POST"
-                                                                enctype="multipart/form-data">
-                                                                <br>
-
-                                                                <br>
-                                                                <label class="formlable">First Name</label>
-                                                                <input type="text" class="form-control disable"
-                                                                    name="full_name" required>
-                                                                <br>
-                                                                <label class="formlable">Last Name</label>
-                                                                <input type="text" class="form-control" name="full_name"
-                                                                    required>
-                                                                <br>
-                                                                <label class="formlable">Gender</label>
-                                                                <input type="text" class="form-control" name="full_name"
-                                                                    required>
-                                                                <br>
-                                                                <label class="formlable">Mobile Number</label>
-                                                                <input type="text" class="form-control" name="full_name"
-                                                                    required>
-                                                                <br>
-                                                                <label class="formlable">Email</label>
-                                                                <input type="text" class="form-control" name="full_name"
-                                                                    required>
-                                                                <br>
-
-
-
-                                                                <br>
-                                                                <input type="submit" value="Update"
-                                                                    class="click-btn btn btn-default" name="ok">
-                                                            </form>
-
-
+                                                                <form action="change_verify.php" method="POST"
+                                                                    enctype="multipart/form-data">
+                                                                    <br>
+                                                                    <br>
+                                                                    <label class="formlable">First Name</label>
+                                                                    <input type="text" class="form-control" name="full_name"
+                                                                        value="<?php echo $row['name'] ?>">
+                                                                    <br>
+                                                                    <label class="formlable">Gender</label>
+                                                                    <input type="text" class="form-control" name="gender"
+                                                                        value="<?php echo $row['gender'] ?>">
+                                                                    <br>
+                                                                    <label class="formlable">Mobile Number</label>
+                                                                    <input type="text" class="form-control" name="mobile_number"
+                                                                        value="<?php echo $row['mobile'] ?>">
+                                                                    <br>
+                                                                    <br>
+                                                                    <br>
+                                                                </form>
+                                                                <form action="account_edit.php" method="POST"
+                                                                    enctype="multipart/form-data">
+                                                                    <input type="submit" value="Update"
+                                                                        class="click-btn btn btn-default" />
+                                                                </form>
+                                                                <?php
+                                                            }
+                                                            ?>
                                                         </div>
                                                     </div>
                                                 </div>
