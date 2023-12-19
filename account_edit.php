@@ -76,8 +76,7 @@ if ($_SESSION['u_name']) {
                                                             while ($row = mysqli_fetch_array($res)) {
                                                                 ?>
 
-                                                                <form action="change_verify.php" method="POST"
-                                                                    enctype="multipart/form-data">
+                                                                <form action="edit_pro.php" method="POST">
                                                                     <br>
                                                                     <br>
                                                                     <label class="formlable">First Name</label>
@@ -94,10 +93,7 @@ if ($_SESSION['u_name']) {
                                                                     <br>
                                                                     <br>
                                                                     <br>
-                                                                </form>
-                                                                <form action="account_edit.php" method="POST"
-                                                                    enctype="multipart/form-data">
-                                                                    <input type="submit" value="Update"
+                                                                    <input type="submit" value="Update" name="Update"
                                                                         class="click-btn btn btn-default" />
                                                                 </form>
                                                                 <?php

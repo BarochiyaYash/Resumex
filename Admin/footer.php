@@ -8,7 +8,7 @@
         
 error_reporting(0);
 ?>
-<footer class="footer"> © 2022 MINI PROJECT YASH | KRUPA | DEEP </footer>
+<footer class="footer"> © 2022 MINI PROJECT YASH</footer>
 <?php
 }	
 ?>
