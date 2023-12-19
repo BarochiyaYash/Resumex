@@ -70,28 +70,36 @@ if ($_SESSION['u_name']) {
                                                     <div class="">
                                                         <div class="single-footer-widgetx">
 
+                                                            <?php
+                                                            $con = mysqli_connect("localhost", "root", "", "resume");
+                                                            $query = "select * from register where u_name='" . $_SESSION['u_name'] . "'";
+                                                            $res = mysqli_query($con, $query);
+                                                            while ($row = mysqli_fetch_array($res)) {
+                                                                ?>
+                                                                <form action="account_edit.php" method="POST"
+                                                                    enctype="multipart/form-data">
+                                                                    <br>
 
-                                                            <form action="account_edit.php" method="POST"
-                                                                enctype="multipart/form-data">
-                                                                <br>
+                                                                    <br>
+                                                                    <label class="formlable">Full Name</label>
+                                                                    <input type="text" class="form-control disable"
+                                                                    value="<?php echo $row['name'] ?>" name="full_name" readonly>
+                                                                    <br>
+                                                                    <label class="formlable">Email</label>
+                                                                    <input type="text" class="form-control" name="full_name"
+                                                                    value="<?php echo $row['email'] ?>" readonly>
+                                                                    <br>
+                                                                    <br>
+                                                                </form>
 
-                                                                <br>
-                                                                <label class="formlable">Full Name</label>
-                                                                <input type="text" class="form-control disable"
-                                                                    name="full_name" readonly>
-                                                                <br>
-                                                                <label class="formlable">Email</label>
-                                                                <input type="text" class="form-control" name="full_name"
-                                                                    readonly>
-                                                                <br>
-                                                                <br>
-                                                            </form>
-
-                                                            <form action="change_verify.php" method="POST"
-                                                                enctype="multipart/form-data">
-                                                                <input type="submit" value="Change Password"
-                                                                    class="click-btn btn btn-default" />
-                                                            </form>
+                                                                <form action="change_verify.php" method="POST"
+                                                                    enctype="multipart/form-data">
+                                                                    <input type="submit" value="Change Password"
+                                                                        class="click-btn btn btn-default" />
+                                                                </form>
+                                                                <?php
+                                                            }
+                                                            ?>
                                                             <br>
 
 

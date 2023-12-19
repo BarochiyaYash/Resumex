@@ -1,7 +1,11 @@
 <?php
 session_start();
-if ($_SESSION['u_name'] == null) {
-    header('location:login.php');
+$passx = 0;
+if ($_REQUEST['pass'] == 1) {
+    $passx = $_REQUEST['pass'];
+}
+if ($_SESSION['u_name'] == null || $passx != 1) {
+    header('location:error.php');
 }
 if ($_SESSION['u_name']) {
 
@@ -45,7 +49,7 @@ if ($_SESSION['u_name']) {
 
             <div class="card-body px-6 py-6">
                 <h3 class="card-title text-left mb-5">Change Password</h3>
-                <h6 class="card-title text-left mb-5">Need to verify your ID and Old Password</h6>
+                <h6 class="card-title text-left mb-5">Enter New Password for you Resumex Account</h6>
 
 
                 <!-- ##### Checkout Area Start ##### -->
@@ -57,34 +61,36 @@ if ($_SESSION['u_name']) {
                                 <div class="checkout_details_area mt-10 clearfix">
                                     <form method="POST">
                                         <?php
+                                        $r = $_REQUEST['pass'];
                                         session_start();
-                                        if (isset($_POST["ok"])) {
-                                            $cp = $_SESSION['u_name'];
-                                            if ($cp == $_POST['username']) {
-                                                $con = mysqli_connect("localhost", "root", "", "resume");
-                                                $q = "select * from register where u_name = '" . $_POST['username'] . "' and password = '" . $_POST['password'] . "' ";
-                                                $r = mysqli_query($con, $q);
-                                                $count = mysqli_num_rows($r);
-                                                if ($count == 1) {
-                                                    
-                                                    echo "<script>window.location = 'change_password.php?pass=1'</script>";
-                                                } else {
-                                                    echo "<script>alert('Invalid user Name And Password')</script>";
-                                                }
+                                        if (isset($_POST["ok"]) && $r == 1) {
+                                            $con = mysqli_connect("localhost", "root", "", "resume");
+                                            $q = "update register set ";
+                                            
+                                            
+                                            $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "' where id=$r";
+                                            
+                                            
+                                            $r = mysqli_query($con, $q);
+                                            $count = mysqli_num_rows($r);
+                                            if ($count == 1) {
+                                                echo "<script>window.location='index.php'</script>";
+                                            } else {
+                                                echo "<script>alert('Invalid user Name And Password')</script>";
                                             }
                                         }
                                         ?>
                                         <div class="row">
                                             <div class="col-md-12 mb-12">
-                                                <label for="email_address">User Name<span>*</span></label>
-                                                <input type="text" class="form-control" name="username"
-                                                    placeholder="User Name" Required>
+                                                <label for="email_address">New Password<span>*</span></label>
+                                                <input type="text" class="form-control" name="password"
+                                                    placeholder="New Password" Required>
                                             </div>
                                             <div class="col-12  mb-12">
                                                 <br>
-                                                <label for="email_address">Password <span>*</span></label>
-                                                <input type="password" class="form-control" name="password"
-                                                    placeholder="Old Password" Required>
+                                                <label for="email_address">Confirm Password<span>*</span></label>
+                                                <input type="password" class="form-control" name="passwordcon"
+                                                    placeholder="Confirm Password" Required>
                                             </div>
                                             <div class="col-12">
                                                 <br>
