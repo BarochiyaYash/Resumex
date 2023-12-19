@@ -61,29 +61,28 @@ if ($_SESSION['u_name']) {
                                 <div class="checkout_details_area mt-10 clearfix">
                                     <form method="POST">
                                         <?php
+                                        $passnot = "";
                                         $r = $_REQUEST['pass'];
                                         session_start();
-                                        if (isset($_POST["ok"]) && $r == 1) {
-                                            $con = mysqli_connect("localhost", "root", "", "resume");
-                                            $q = "update register set ";
-                                            
-                                            
-                                            $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "' where id=$r";
-                                            
-                                            
-                                            $r = mysqli_query($con, $q);
-                                            $count = mysqli_num_rows($r);
-                                            if ($count == 1) {
-                                                echo "<script>window.location='index.php'</script>";
-                                            } else {
-                                                echo "<script>alert('Invalid user Name And Password')</script>";
+                                        if ($_POST['password'] == $_POST['passwordcon']) {
+                                            if (isset($_POST["ok"]) && $r == 1) {
+                                                $con = mysqli_connect("localhost", "root", "", "resume");
+                                                $q = "update register set password='" . $_POST['password'] . "' where u_name='" . $_SESSION['u_name'] . "'";
+                                                $r = mysqli_query($con, $q);
+                                                if ($r == 1) {
+                                                    echo "<script>window.location='logout.php'</script>";
+                                                } else {
+                                                    echo "<script>alert('Invalid user Name And Password')</script>";
+                                                }
                                             }
+                                        } else {
+                                            $passnot = "passwords do not match";
                                         }
                                         ?>
                                         <div class="row">
                                             <div class="col-md-12 mb-12">
                                                 <label for="email_address">New Password<span>*</span></label>
-                                                <input type="text" class="form-control" name="password"
+                                                <input type="password" class="form-control" name="password"
                                                     placeholder="New Password" Required>
                                             </div>
                                             <div class="col-12  mb-12">
@@ -91,7 +90,12 @@ if ($_SESSION['u_name']) {
                                                 <label for="email_address">Confirm Password<span>*</span></label>
                                                 <input type="password" class="form-control" name="passwordcon"
                                                     placeholder="Confirm Password" Required>
+                                                <br>
+                                                <label>
+                                                    <?php echo $passnot; ?>
+                                                </label>
                                             </div>
+
                                             <div class="col-12">
                                                 <br>
                                                 <br>
