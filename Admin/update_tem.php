@@ -1,16 +1,15 @@
 <?php
-    session_start();
-    if ($_SESSION['email'] == null)
-    {
-        header('location:login.php');
-    }
-    if($_SESSION['email'] ) {
-        
-error_reporting(0);
-?>
-<?php
+session_start();
+if ($_SESSION['email'] == null) {
+  header('location:login.php');
+}
+if ($_SESSION['email']) {
 
-$r = $_POST['idx'];
+  error_reporting(0);
+  ?>
+  <?php
+
+  $r = $_POST['idx'];
   $con = mysqli_connect("localhost", "root", "", "resume");
   if (isset($_POST["ok"])) {
 
@@ -119,26 +118,19 @@ $r = $_POST['idx'];
 
     if ($fname == null && $fnameB == null && $fnameC == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "' where id=$r";
-    }
-    else if($fname == null && $fnameB == null){
+    } else if ($fname == null && $fnameB == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',logic_file='$dpathC' where id=$r";
-    }
-    else if($fname == null && $fnameC == null){
+    } else if ($fname == null && $fnameC == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',kit_image='$dpathB' where id=$r";
-    }
-    else if($fnameB == null && $fnameC == null){
+    } else if ($fnameB == null && $fnameC == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',example_image='$dpath' where id=$r";
-    }
-    else if($fname == null){
+    } else if ($fname == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',kit_image='$dpathB',logic_file='$dpathC' where id=$r";
-    }
-    else if($fnameB == null){
+    } else if ($fnameB == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',example_image='$dpath',logic_file='$dpathC' where id=$r";
-    }
-    else if($fnameC == null){
+    } else if ($fnameC == null) {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',example_image='$dpath',kit_image='$dpathB' where id=$r";
-    }
-    else {
+    } else {
       $q = "update template set temp_id='" . $_POST['t_id'] . "',temp_name='" . $_POST['t_name'] . "',about_temp='" . $_POST['t_about'] . "',example_image='$dpath',kit_image='$dpathB',logic_file='$dpathC' where id=$r";
     }
 
@@ -153,6 +145,7 @@ $r = $_POST['idx'];
 </script>";
     }
   }
-?><?php
-}	
+?>
+<?php
+}
 ?>
