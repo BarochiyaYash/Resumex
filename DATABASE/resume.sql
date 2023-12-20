@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 22, 2023 at 11:49 AM
+-- Generation Time: Dec 20, 2023 at 10:40 AM
 -- Server version: 10.4.22-MariaDB
 -- PHP Version: 8.0.13
 
@@ -66,9 +66,7 @@ CREATE TABLE `register` (
 INSERT INTO `register` (`id`, `name`, `u_name`, `email`, `gender`, `mobile`, `password`) VALUES
 (1, '', '', '', '', '', ''),
 (2, '', '', '', '', '', ''),
-(4, 'Barochiya Yash', 'yash', 'ybarochiya@rku.ac.in', 'Male', '9500000000', '12345678'),
-(8, 'shubh rupapara', 'shubh_007', 'srupapapara@rku.ac.in', 'Male', '9222222225', '1234567890'),
-(9, 'Yash Barochiya', 'yash_ba', 'yash@gmail.com', 'Male', '9532459908', '123455');
+(4, 'Yash Barochiya', 'yash', 'ybarochiya@rku.ac.in', 'Male', '8488532647', '12345');
 
 -- --------------------------------------------------------
 
@@ -111,9 +109,7 @@ CREATE TABLE `resume_data` (
 --
 
 INSERT INTO `resume_data` (`id`, `image`, `full_name`, `expert`, `about`, `lA`, `lB`, `lC`, `address`, `phone`, `email`, `eduA`, `yearA`, `eduB`, `yearB`, `expeyearA`, `expetitleA`, `expeA`, `expeyearB`, `expetitleB`, `expeB`, `skillA`, `skillB`, `skillC`, `skillD`, `skillE`, `user_id`) VALUES
-(2, 'uploads/M.png', 'Barochiya Yash', 'Web Devloper', 'I have a 10 year of Expiriace in AI, ML devlopment in Google UK. I have a also ovener of data master website in India.', 'Gujarati', 'Hinadi', 'English', 'Rajkot,India', '9500000000', 'ybarochiya@rku.ac.in', 'Enducation ONE', '2020 - 2023', 'Education TWO', '2020 - 2023', '2020', 'Software Devloper', 'Explane Sort', '2020', 'Software Devloper', 'Explane Sort This is a only testing for all the data  is proper or not so you can do please.', 'HTML', 'CSS', 'JS', 'PHP', 'SQL', 'yash'),
-(6, 'uploads/M.png', 'shubh rupapara', 'Android devloper', 'Explain Your self in Sort', 'Gujarati', 'Hindi', 'English', 'Rajkot, India', '9700000000', 'srupapapara@rku.ac.in', 'dipoma computer', '2020 - 2023', 'Education three', '2020 - 2023', '2021', 'Website Project', 'In RK University i have a made website of rku website in php, html, css, js.', '2022', 'Androde App', 'I have made app for my collage project. i have made in food app.', 'HTML', 'CSS', 'JS', 'PHP', 'SQL', 'shubh_007'),
-(7, 'uploads/example.png', 'Yash Barochiya', 'Web Developer', 'Explain Your self in Sort', 'Gujarati', 'Hindi', 'English', 'Rajkot, India', '9532459908', 'yash@gmail.com', 'Enducation ONE', '2020 - 2023', 'Education TWO', '2020 - 2023', '2020', 'Software Developer', 'Explain Sort', '2020', 'Software Developer', 'Explain Sort', 'HTML', 'CSS', 'JS', 'PHP', 'SQL', 'yash_ba');
+(2, 'uploads/Yashkumar.png', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', '', 'yash');
 
 -- --------------------------------------------------------
 
@@ -221,13 +217,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `register`
 --
 ALTER TABLE `register`
-  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(200) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT for table `resume_data`
 --
 ALTER TABLE `resume_data`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT for table `template`
