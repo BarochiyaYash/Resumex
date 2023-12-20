@@ -8,7 +8,7 @@
         
 error_reporting(0);
 ?>
-<footer class="footer"> © 2022 MINI PROJECT YASH</footer>
+<footer class="footer"> © 2023 PROJECT BY YASH</footer>
 <?php
 }	
 ?>
