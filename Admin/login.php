@@ -2,61 +2,121 @@
 <html lang="en">
 
 <head>
-	<link href="css/login.css" rel="stylesheet">
+
+    <!-- Title  -->
+    <title>Admin - Login</title>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="../img/core-img/favicon.ico">
+
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Star Admin</title>
+    <link rel="stylesheet" href="../xother/node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="../xother/node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
+    <link rel="stylesheet" href="../xother/css/style.css" />
+    <link rel="shortcut icon" href="../xother/images/favicon.png" />
+    <!-- MY CSS -->
+    <link rel="stylesheet" href="../xother/acxx.css">
+
+
+    <!-- Core Style CSS -->
+    <link rel="stylesheet" href="../xother/csss/core-style.css">
+    <link rel="stylesheet" href="../xother/style.css">
+
+
 </head>
 
 <body>
-<?php
-		session_start();
-		if(isset($_POST["ok"]))
-		{
-			$con = mysqli_connect("localhost","root","","resume");
-			$q = "select * from admin where email = '".$_POST['emailL']."' and password = '".$_POST['passwordL']."' " ;
-			$r = mysqli_query($con,$q);
-			$count = mysqli_num_rows($r);
-			if ($count == 1) {
-				$_SESSION['email'] = $_POST['emailL'];
-				$_SESSION['password'] = $_POST['passwordL'];
-				echo "<script>window.location='index.php'</script>";
-			  } else {
-				echo "<script>alert('Invalid user Name And Password')</script>";
-			  }
-		}  
 
-	?>
+    <div class="card col-lg-4 mx-auto">
+        <!-- //new -->
 
-<div class="container">
-	<div class="screen">
-		<div class="screen__content">
-			<form class="login" method="POST" style="padding-top:55px;">
-			<h1 style="padding-bottom:20px;"><center>Admin Login</center> </h1>
-				<div class="login__field">
-					<i class="login__icon fas fa-user"></i>
-					<input type="text" class="login__input" placeholder="Email" name="emailL" required>
-				</div>
-				<div class="login__field">
-					<i class="login__icon fas fa-lock"></i>
-					<input type="password" class="login__input" placeholder="Password" name="passwordL" required>
-				</div>
-				
+        <div class="card-body px-6 py-6">
+            <h3 class="card-title text-left mb-5">Admin Login</h3>
 
-				<input type="submit" class="button login__submit" name="ok" value="Login">
 
-				</a>
-			</form>
+            <!-- ##### Checkout Area Start ##### -->
+            <div class="checkout_area section-padding-150">
+                <div class="container">
+                    <div class="row">
 
-				
+                        <div class="col-12 col-md-12">
+                            <div class="checkout_details_area mt-10 clearfix">
+                                <form method="POST">
+                                    <?php
+                                    session_start();
+                                    if (isset($_POST["ok"])) {
+                                        $con = mysqli_connect("localhost", "root", "", "resume");
+                                        $q = "select * from admin where email = '" . $_POST['emailL'] . "' and password = '" . $_POST['passwordL'] . "' ";
+                                        $r = mysqli_query($con, $q);
+                                        $count = mysqli_num_rows($r);
+                                        if ($count == 1) {
+                                            $_SESSION['email'] = $_POST['emailL'];
+                                            $_SESSION['password'] = $_POST['passwordL'];
+                                            echo "<script>window.location='index.php'</script>";
+                                        } else {
+                                            echo "<script>alert('Invalid user Name And Password')</script>";
+                                        }
+                                    }
 
-		
-		</div>
-		<div class="screen__background">
-			<span class="screen__background__shape screen__background__shape4"></span>
-			<span class="screen__background__shape screen__background__shape3"></span>		
-			<span class="screen__background__shape screen__background__shape2"></span>
-			<span class="screen__background__shape screen__background__shape1"></span>
-		</div>		
-	</div>
-</div>
+                                    ?>
+                                    <div class="row">
+                                        <div class="col-md-12 mb-12">
+                                            <label for="email_address">User Name<span>*</span></label>
+                                            <input type="text" class="form-control" name="emailL"
+                                                placeholder="Email" required>
+                                        </div>
+                                        <div class="col-12  mb-12">
+                                            <br>
+                                            <label for="email_address">Password <span>*</span></label>
+                                            <input type="password" class="form-control" name="passwordL"
+                                                placeholder="Password" required>
+                                        </div>
+                                        <div class="col-12">
+                                            <br>
+                                            <div class="custom-control custom-checkbox d-block mb-2">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"
+                                                    style="color:red">
+                                                </label>
+                                            </div>
+                                            
+                                            <br>
+                                            <center>
+                                                <div class="col-12  mb-12">
+                                                    <input type="submit" class="btn essence-btn" id="customCheck2"
+                                                        value="Login" name="ok">
+                                                    <!-- <a href="#" name="ok"></a> -->
+                                                </div>
+                                            </center>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- ##### Checkout Area End ##### -->
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+    <script src="../xother/node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../xother/node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="../xother/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="../xother/node_modules/perfect-scrollbar/dist/js/perfect-scrollbar.jquery.min.js"></script>
+    <script src="../xother/js/misc.js"></script>
+    <!-- Google Maps -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwuyLRa1uKNtbgx6xAJVmWy-zADgegA2s"></script>
+    <script src="../xother/js/map-active.js"></script>
+
 </body>
 
 </html>
