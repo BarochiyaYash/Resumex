@@ -35,7 +35,7 @@
     <!-- //new -->
 
     <div class="card-body px-6 py-6">
-      <h3 class="card-title text-left mb-5">Login</h3>
+      <h3 class="card-title text-left mb-5">Signup</h3>
 
 
       <!-- ##### Checkout Area Start ##### -->
