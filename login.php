@@ -47,6 +47,7 @@
                 <div class="checkout_details_area mt-10 clearfix">
                   <form method="POST">
                     <?php
+                    $uae ="";
                     session_start();
                     if (isset($_POST["ok"])) {
                       $con = mysqli_connect("localhost", "root", "", "resume");
@@ -58,7 +59,7 @@
                         $_SESSION['password'] = $_POST['password'];
                         echo "<script>window.location='index.php'</script>";
                       } else {
-                        echo "<script>alert('Invalid user Name And Password')</script>";
+                        $uae = "ID Password not matching";
                       }
                     }
 
@@ -77,7 +78,7 @@
                         <br>
                         <div class="custom-control custom-checkbox d-block mb-2">
                           <input type="checkbox" class="custom-control-input" id="customCheck1">
-                          <label class="custom-control-label" for="customCheck1">Terms and conitions<span>*</span></label>
+                          <label class="custom-control-label" for="customCheck1" style="color:red"><?php echo $uae; ?></label>
                         </div>
                         <div class="custom-control custom-checkbox d-block mb-2">
                           <a href="signup.php"> Create an accout</a>

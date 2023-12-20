@@ -58,7 +58,7 @@
 
                       if ($res) {
                         if ($row['u_name'] == $_POST['username']) {
-                          echo "<script>alert('This User Name is allready existe. use anether one')</script>";
+                          $uae = "You are Not Signup <br> *User another User Name This is already exists";
                           $number = 1;
                         } else {
                           $number = 0;
@@ -67,7 +67,7 @@
                   }
                   if ($number != 1 && $_POST['name'] && $_POST['username']) {
 
-                    echo "<script>alert('inserted')</script>";
+                    echo "<script>window.location = 'welcome.php'</script>";
                     $query = "insert into register(id,name,u_name,email,gender,mobile,password)values('NULL','" . $_POST['name'] . "','" . $_POST['username'] . "','" . $_POST['email'] . "','" . $_POST['gender'] . "','" . $_POST['mobile'] . "','" . $_POST['password'] . "')";
 
                     $result = mysqli_query($con, $query);
@@ -110,14 +110,14 @@
 
                     <div class="col-12  mb-12">
                       <br>
-                      <label for="email_address">First Name<span>*</span></label>
-                      <input type="text" class="form-control" name="f_name" placeholder="First Name" required>
+                      <label for="email_address">Full Name<span>*</span></label>
+                      <input type="text" class="form-control" name="name" placeholder="Full Name" required>
                     </div>
 
                     <div class="col-md-12 mb-12">
                       <br>
-                      <label for="email_address">Last Name<span>*</span></label>
-                      <input type="text" class="form-control" name="l_name" placeholder="Last Name" required>
+                      <label for="email_address">User Name<span>*</span></label>
+                      <input type="text" class="form-control" name="username" placeholder="User Name" required>
                     </div>
 
                     <div class="col-12  mb-12">
@@ -153,7 +153,10 @@
                       <input type="password" class="form-control" name="password" placeholder="Conform Password"
                         required>
                     </div>
-
+                    <div class="col-12  mb-12">
+                      <br>
+                      <label for="email_address" style="color: red;"><?php echo $uae; ?></label>
+                    </div>
 
                     <div class="col-12">
                       <br>

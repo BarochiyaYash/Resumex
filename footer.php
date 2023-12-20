@@ -5,6 +5,7 @@
 			<div class="col-lg-6 col-md-6 col-sm-6">
 				<div class="single-footer-widget">
 					<h6>About Us</h6>
+					Your professional snapshot. Land interviews, showcase skills, fit company culture. Foot in the door, track career path. Useful for various opportunities. Craft well, get the job.
 					<p class="footer-text">
 						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
 						Copyright &copy;

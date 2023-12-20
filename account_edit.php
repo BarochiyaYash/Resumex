@@ -79,7 +79,7 @@ if ($_SESSION['u_name']) {
                                                                 <form action="edit_pro.php" method="POST">
                                                                     <br>
                                                                     <br>
-                                                                    <label class="formlable">First Name</label>
+                                                                    <label class="formlable">Full Name</label>
                                                                     <input type="text" class="form-control" name="full_name"
                                                                         value="<?php echo $row['name'] ?>">
                                                                     <br>

@@ -103,19 +103,18 @@ if ($_SESSION['u_name']) {
                                                             <br>
 
 
-                                                            <form action="reset_verify.php" method="POST"
+                                                            <!-- <form action="reset_verify.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Reset All Data"
                                                                     href="reset_verify.php"
                                                                     class="click-btn btn btn-default">
-                                                            </form>
-                                                            <br>
-                                                            <form action="delete_verify.php" method="POST"
+                                                            </form> -->
+                                                            <!-- <form action="delete_verify.php" method="POST"
                                                                 enctype="multipart/form-data">
                                                                 <input type="submit" value="Delete Account"
                                                                     href="delete_verify.php"
                                                                     class="click-btn btn btn-default" name="ok">
-                                                            </form>
+                                                            </form> -->
 
 
 
