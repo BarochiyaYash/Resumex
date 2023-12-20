@@ -5,7 +5,7 @@ if ($_SESSION['u_name'] == null) {
 }
 if ($_SESSION['u_name']) {
 
-    error_reporting(0);
+    // error_reporting(0);
     ?>
     <!DOCTYPE html>
     <html lang="en">
@@ -13,7 +13,7 @@ if ($_SESSION['u_name']) {
     <head>
 
         <!-- Title  -->
-        <title>Essence - Fashion Ecommerce Template</title>
+        <title>Change Password</title>
 
         <!-- Favicon  -->
         <link rel="icon" href="img/core-img/favicon.ico">
@@ -22,7 +22,6 @@ if ($_SESSION['u_name']) {
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-        <title>Star Admin</title>
         <link rel="stylesheet" href="xother/node_modules/font-awesome/css/font-awesome.min.css" />
         <link rel="stylesheet" href="xother/node_modules/perfect-scrollbar/dist/css/perfect-scrollbar.min.css" />
         <link rel="stylesheet" href="xother/css/style.css" />
@@ -57,7 +56,7 @@ if ($_SESSION['u_name']) {
                                 <div class="checkout_details_area mt-10 clearfix">
                                     <form method="POST">
                                         <?php
-                                        session_start();
+                                    
                                         if (isset($_POST["ok"])) {
                                             $cp = $_SESSION['u_name'];
                                             if ($cp == $_POST['username']) {
@@ -91,9 +90,7 @@ if ($_SESSION['u_name']) {
                                                 <br>
                                                 <center>
                                                     <div class="col-12  mb-12">
-                                                        <input type="submit" class="btn essence-btn" id="customCheck2"
-                                                            value="Verify and Next"
-                                                            href="edittemplate.php?id=<?php echo $row['id'] ?>" name="ok">
+                                                        <input type="submit" class="btn essence-btn" value="Verify and Next" name="ok">
                                                         <!-- <a href="#" name="ok"></a> -->
                                                     </div>
                                                 </center>
